@@ -1,0 +1,104 @@
+body{
+ background-color: #f7cec5;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: red;
+}
+
+input {
+  width: 90%;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  margin: 10px ;
+  padding: 10px 40px;
+  width: 90%;
+
+}
+
+.x {
+  color: black;
+
+}
+
+
+p {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  color: white;
+
+}
+
+.available p {
+
+}
+
+.available {
+  background-color: #dcdcdc;
+  color: grey;
+}
+.reserved {
+  background-color: grey;
+}
+
+.formBox {
+  visibility: hidden;
+  position: fixed;
+  margin: 0 auto;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+
+
+
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  height; 500px;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  z-index: -1;
+  padding: 15px  40px ;
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+
+
+  
