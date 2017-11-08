@@ -1,26 +1,39 @@
 $(document).ready(function() {
 
 $(".available").click(function() {
-        $(".formBox").css("visibility", "visible");
-
-    });
+  $(".formBox").css("visibility", "visible");
+  });
 
 $(".reserved").click(function() {
-        $(this).css("cursor", "not-allowed");
-    });
+ $(this).css("cursor", "not-allowed");
+  });
 
-$(".x").click(function() {
-        $(".formBox").css("display", "none");
-
-    });
-
-$(".button").click(function() {
-  $("available").addClassByClick("reserved");
+$("h6").click(function() {
+  $(".formBox").css("display", "none");
+  });
+$("h6").on("mouseover", function() {
+  $(this).css("cursor", "pointer");
 });
 
-$("available").mouseover(function(){
-  $("available").fadeTo("slow", "0.5");
+$("button").click(function() {
+  $(".available").addClassByClick(".reserved");
+ });
+
+$(".available").on("mouseover", function() {
+ $(this).css("cursor", "pointer" );
+});
+
+$(".available").hover(function(){
+    $(this).fadeToggle("slow");
 });
 
 
+});
+
+
+
+
+$(".container").on("click", function(event) {
+  container = $(this);
+  $("form").fadeIn(2000);
 });
